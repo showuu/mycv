@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hello</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>万方正的简历</title>
+	<link rel="stylesheet" type="text/css" href="vendor/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
-  <h1>Hello!</h1>
-  <p>showuu</p>
-  
+<header>
+	<div id="description">
+		<p id="name">万方正</p>
+		<p id="personalcv">个人简历</p>
+	</div>
+	<div id="contacts">
+		<ul>
+			<li>邮箱: clownis@163.com</li>
+			<li>手机：18883285212</li>
+		</ul>
+	</div>			
+</header>
+	<div id="pagepiling">
+		<div id="home" class="section center sun">
+			<h1 id="title">万方正</h1>
+			<p id="subtitle">
+			一个有梦想，有才华，有颜值，爱前端，爱技术，爱学习的童鞋
+			</p>
+			<h4>人生格言: Where there is a will there is a way</h4>
+			<p>
+				<a class="highlight" href="mailto:colowis@163.com">clownis@163.com</a>
+			</p>		
+		</div>
+
+		<div id="skills" class="section center boat">
+			<h1>掌握技术</h1>
+			<div id="nav">
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>AngularJS</li>
+					<li>Bootstrap</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="project" class="section center balloon">
+			<h1>项目经验</h1>
+			<div id="project-2048">
+				<p>2048</p>
+				<a href="2048-origin/2048-master/index.html" target="_blank">
+					<img src="images/2048.gif" alt="2048" />
+				</a>
+            </div>
+            <div id="project-riven">
+            	<p>Riven</p>
+            	<a href="riven/index.html" target="_blank">
+            		<img src="images/riven.gif" alt="riven">
+            	</a>
+            </div>
+		</div>
+
+		<div class="section center ocean">
+			<h1>结束语</h1>
+			<p>尼尔斯骑着白鹅游遍了世界，我的梦想才刚刚开始起飞</p><br>
+			<p>让我们在未来的旅途中陪伴彼此，探索更多的美好！</p>
+			<br />
+			<p>I GO LA, WE GO LA, LET US GO!</p>
+			<h2>
+				<a target="_blank" href="万方正个人简历(web前端).pdf">简历下载</a>
+			</h2>
+		</div>
+	</div>
+	<script src="vendor/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<script src="vendor/jquery.pagepiling.min.js" tyep="text/javascript"></script>
+	<script src="scripts/index.js" type="text/javascript"></script>
+	<script src="scripts/skills.js" type="text/javascript"></script>
 </body>
 </html>
