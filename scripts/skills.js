@@ -154,7 +154,7 @@ function prepareSlideshow() {
   		if(listvalue == "jQuery") {
   			moveElement("preview", -750, 0, 5);
         item_1.innerHTML = "熟悉jQuery基本语法规则";
-        item_2.innerHTML = "了解jQuery中事件触发与DOM操作在原生JS中语法的相应实现";
+        item_2.innerHTML = "了解jQuery中事件触发与DOM操作在原生JS中的相应实现";
         item_3.innerHTML = "能够用jQuery库结合相关技术进行开发";
   		}
 }
