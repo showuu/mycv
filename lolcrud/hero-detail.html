@@ -1,0 +1,13 @@
+<div class="hero-images">
+	<img ng-src="{{img}}" class="hero" ng-repeat="img in hero.images" ng-class="{active:mainImageUrl==img}">
+</div>
+
+
+<h1>{{hero.name}}</h1>
+<p>{{hero.description}}</p>
+
+<ul class="hero-thumbs">
+	<li ng-repeat="img in hero.images">
+		<img ng-src="{{img}}" ng-click="setImage(img)">
+	</li>
+</ul>

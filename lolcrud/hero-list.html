@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <span class="search">请输入关键字</span><br>   
+      搜索: <input ng-model="query"><br>
+      排序:
+      <select ng-model="orderProp">
+        <option value="name">英雄名称</option>
+        <option value="age">发布顺序</option>
+      </select>
+
+    </div>
+    <div class="col-md-10">
+
+      <ul class="heroes">
+        <li ng-repeat="hero in heroes | filter:query | orderBy:orderProp" class="thumbnail hero-listing">
+            <a href="#/heroes/{{hero.id}}" class="thumb"><img ng-src="{{hero.imageUrl}}"></a>
+            <a href="#/heroes/{{hero.id}}">{{hero.name}}</a>
+          <p>{{hero.snippet}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
