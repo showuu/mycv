@@ -130,7 +130,7 @@ img#preview {
 
 .myproject {
 	float:left;
-	height:35%;
+	height:45%;
 	width:50%;
 }
 
@@ -175,7 +175,6 @@ img#preview {
 	background-color: #e8d098
 }
 
-@media screen and (max-width: 760px) {
 
 .mobile * {
 	text-shadow:none !important
@@ -206,19 +205,30 @@ img#preview {
 	margin-right:2em;
 	color:#fff
 }
+
 .mobile #contacts li {
 	float:right;
 	margin: .5em 2em;
 }
 
+.mobile #nav li {
+	font-size:.5em;
+	border-radius:3px;
+	margin:.5em .5em .5em .5em;
+	padding:.25em .25em;
+  	display:inline-block;
+	background-color:#019fde
+}
 
 .mobile #details li {
+	width:100%;
 	list-style:none;
 	font-size:.75em;
 	margin:1.2em auto;
 	color:black
 }
+
 .mobile .myproject {
-	display:block;
-}
+	height:35%;
+	width:50%;
 }
